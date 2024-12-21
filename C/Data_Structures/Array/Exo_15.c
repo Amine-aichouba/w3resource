@@ -19,12 +19,8 @@ int main ()
             scanf ( " %d" , ( T + i ) ) ; 
         }
 
-    printf ( "\n\n\t 🖝  Give me the value to be inserted : " ) ;
+    printf ( "\n\n\t 🖝  Give me the position where to delete : " ) ;
     scanf ( " %d" , &position ) ;
-
-    printf ( " \n\n\t 🖝  The current list of the array : " ) ;
-    for ( int i = 0 ; i < size ; i ++ )
-        printf ( " %d " , *(T + i) ) ;
     
     for ( int i = 0 ; i < size ; i ++ )  
         {
@@ -32,7 +28,7 @@ int main ()
                 T [i] = T [i + 1] ;
         }
     size -- ;
-    printf ( " \n\n\t 🖝  After Insert the element the new list is : " ) ;
+    printf ( " \n\n\t 🖝  The new list is : " ) ;
     for ( int i = 0 ; i < size ; i ++ ) 
         printf ( " %d " , T [i] ) ;
 
